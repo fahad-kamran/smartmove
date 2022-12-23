@@ -8,6 +8,8 @@
     <title>Home :: stbasils</title>
     <!-- bootstrap css -->
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <!-- custom animation css -->
+    <link rel="stylesheet" href="./assets/css/custom-animation.css">
     <!-- custom css -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- fontawesome cdn -->
@@ -18,12 +20,12 @@
     <!-- NavBar -->
     <nav class="navBar" id="navBar">
         <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-4 col-md-6">
-                    <a class="me-4" href="#">
+            <div class="d-flex align-items-center">
+                <div class="w-100">
+                    <a class="me-4 text-decoration-none" href="#">
                         <img src="./assets/images/logohd.png" class="navbar_logo" alt="logo">
                     </a>
-                    <span class="d-none d-xl-inline-block">
+                    <span class="d-none d-md-inline-block">
                         <div class="d-inline-block me-3">
                             <div class="position-relative custom_dropdown">
                                 <button type="button" class="btn_outline_primary bg-none">About Us</button>
@@ -46,8 +48,8 @@
                                     <li class="mb-2"><a class="dropdown_item" href="#">Causes and National Stats</a>
                                     </li>
                                     <li class="mb-2"><a class="dropdown_item" href="#">The Positive Pathway</a></li>
-                                    <li class="mb-2"><a class="dropdown_item" href="#">St Basils as a PIE</a></li>
-                                    <li class="mb-2"><a class="dropdown_item" href="#">St Basils Charter</a></li>
+                                    <li class="mb-2"><a class="dropdown_item" href="#">Smartmove as a PIE</a></li>
+                                    <li class="mb-2"><a class="dropdown_item" href="#">Smartmove Charter</a></li>
                                     <li class="mb-2"><a class="dropdown_item" href="#">Youth Voice</a></li>
                                 </ul>
                             </div>
@@ -55,17 +57,14 @@
                         <a href="#" class="btn_outline_primary">Get Help</a>
                     </span>
                 </div>
-                <div class="col-8 col-md-6 d-flex justify-content-end">
-                    <span class="d-none d-sm-inline-block">
-                        <a href="#" class="btn_outline_primary me-3">Donate</a>
-                        <a href="#" class="btn_outline_primary me-3">Help Us</a>
-                    </span>
+                <div class="d-flex justify-content-end">
                     <button type="button" class="bg-none border-0 me-3">
                         <i class="fa-solid fa-magnifying-glass fs-30"></i>
                     </button>
 
                     <!-- sidebar toogle -->
-                    <button type="button" class="bg-none border-0" data-bs-toggle="offcanvas" data-bs-target="#main_menu_sidebar" aria-controls="main_menu_sidebar">
+                    <button type="button" class="bg-none border-0" data-bs-toggle="offcanvas"
+                        data-bs-target="#main_menu_sidebar" aria-controls="main_menu_sidebar">
                         <i class="fa-solid fa-bars fs-30"></i>
                     </button>
                 </div>
@@ -76,21 +75,28 @@
     <!-- main menu sidebar -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="main_menu_sidebar">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title">Where do you want to go</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5 class="offcanvas-title">Where do you want to go</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-         <ul class="sidebar_menu">
-            <li class="mb-3"><a class="sidebar_item section_title text-dark text-decoration-none" href="#">Get Help</a></li>
-            <li class="mb-3"><a class="sidebar_item section_title text-dark text-decoration-none" href="#">About Us</a></li>
-            <li class="mb-3"><a class="sidebar_item section_title text-dark text-decoration-none" href="#">Latest</a></li>
-            <li class="mb-3"><a class="sidebar_item section_title text-dark text-decoration-none" href="#">Events</a></li>
-            <li class="mb-3"><a class="sidebar_item section_title text-dark text-decoration-none" href="#">Help Us</a></li>
-            <li class="mb-3"><a class="sidebar_item section_title text-dark text-decoration-none" href="#">Careers</a></li>
-            <li class="mb-3"><a class="sidebar_item section_title text-dark text-decoration-none" href="#">Contact Us</a></li>
-         </ul>
+            <ul class="sidebar_menu">
+                <li class="mb-3"><a class="sidebar_item section_title text-dark text-decoration-none" href="#">Get
+                        Help</a></li>
+                <li class="mb-3"><a class="sidebar_item section_title text-dark text-decoration-none" href="#">About
+                        Us</a></li>
+                <li class="mb-3"><a class="sidebar_item section_title text-dark text-decoration-none"
+                        href="#">Latest</a></li>
+                <li class="mb-3"><a class="sidebar_item section_title text-dark text-decoration-none"
+                        href="#">Events</a></li>
+                <li class="mb-3"><a class="sidebar_item section_title text-dark text-decoration-none" href="#">Help
+                        Us</a></li>
+                <li class="mb-3"><a class="sidebar_item section_title text-dark text-decoration-none"
+                        href="#">Careers</a></li>
+                <li class="mb-3"><a class="sidebar_item section_title text-dark text-decoration-none" href="#">Contact
+                        Us</a></li>
+            </ul>
         </div>
-      </div>
+    </div>
     <!-- main menu sidebar -->
     <!-- NavBar -->
 
@@ -98,15 +104,16 @@
     <header class="header home_banner py-5">
         <div class="container-lg">
             <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <img src="./assets/images/home_banner.png" alt="banner" class="img-fluid">
-                </div>
                 <div class="col-12 text-white">
-                    <span class="section_sub_title">St Basils - 50 years of supporting young people</span>
-                    <h2 class="section_title mb-4">Are you aged 16-25 and homeless, at risk or just in need of some
-                        housing
-                        advice? We can help!</h2>
-                    <a href="#" class="btn_outline_primary">Get help now</a>
+                    <span class="section_sub_title">Smartmove - 50 years of supporting young people</span>
+                    <h2 class="section_title mb-4">Are you sleeping rough, sofa surfing or at risk of becoming homeless?
+                    </h2>
+                    <div class="mb-4">
+                        <a href="#" class="btn_outline_primary">Get help now</a>
+                    </div>
+                    <a href="#our_mission" class="scrollDownAnim m-auto">
+                        <span></span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -114,7 +121,7 @@
     <!-- header end -->
 
     <!-- Our Mission -->
-    <section class="our_mission py-5 text-white">
+    <section id="our_mission" class="our_mission py-5 text-white">
         <div class="container-lg py-5">
             <div class="row">
                 <div class="col-12 col-md-4 col-lg-3 mb-5">
@@ -126,9 +133,9 @@
                 </div>
                 <div class="col-12 col-md-8 col-lg-6 mb-5">
                     <h1 class="section_title">Our <br> Mission</h1>
-                    <p class="discription mb-5">St Basils works with young people to enable them to find and keep a
-                        home, grow their confidence, develop their skills, increase opportunities and prevent
-                        homelessness.</p>
+                    <p class="discription mb-5">Smartmove provides supported housing options and delivers a holistic
+                        housing service to help people to sustain their tenancy, develop their skills and prevent
+                        homelessness. </p>
                     <a class="btn_primary" href="#">Find Out More</a>
                 </div>
             </div>
@@ -141,12 +148,12 @@
         <div class="container-lg">
             <div class="row">
                 <div class="col-12 col-md-4 col-lg-3 mb-5">
-                    <h3 class="section_sub_title">Hear One of our St Basils Alumni Speak</h3>
+
                 </div>
                 <div class="col-12 col-md-8 col-lg-6 mb-5">
-                    <h1 class="section_title">What does St Basils do?</h1>
+                    <h1 class="section_title">What does Smartmove do?</h1>
                     <div class="youtube_ifame mb-4">
-                        <iframe loading="lazy" title="St Basils Alumni Testimonials - Natasha"
+                        <iframe loading="lazy" title="Smartmove Alumni Testimonials - Natasha"
                             src="https://www.youtube.com/embed/jOW0ydMshes?enablejsapi=1" width="100%" height="315"
                             frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                     </div>
@@ -163,15 +170,16 @@
         <div class="container-lg">
             <div class="row">
                 <div class="col-12 col-md-4 col-lg-3 mb-5">
-                    <h3 class="section_sub_title">Fundraise for us at Christmas</h3>
+
                 </div>
                 <div class="col-12 col-md-8 col-lg-6 mb-5">
-                    <h1 class="section_title">St Basils <br> Christmas <br> Appeal</h1>
-                    <img src="./assets/images/CHRISTMAS-ST-BASILS.png" alt="CHRISTMAS Appeal" class="img-fluid mb-5">
+                    <h1 class="section_title">Smartmove <br> Christmas <br> Appeal</h1>
+                    <img src="./assets/images/snow-christmas.jpg" alt="CHRISTMAS Appeal"
+                        class="img-fluid mb-5 rounded shadow-lg">
                     <p>Did you know we house over 600+ young people every single night across our 40+ supported
                         accommodation schemes in Birmingham, Bromsgrove, Solihull, Redditch, Bromsgrove, Kidderminster,
                         Walsall, Sandwell and Leamington Spa?</p>
-                    <p>Everyday, St Basils is running at a deficit and sadly we’re short of £5 per day per young person
+                    <p>Everyday, Smartmove is running at a deficit and sadly we’re short of £5 per day per young person
                         staying in one of our projects.</p>
                     <p class="fw-bold"><strong>This Christmas we’re looking to our supporters for help, providing a
                             range of fun winter activities and fundraising opportunities. </strong></p>
@@ -181,30 +189,6 @@
         </div>
     </section>
     <!-- christmas appeal -->
-
-    <!-- national work  -->
-    <section class="national_work pt-5 text-white">
-        <div class="container-lg">
-            <div class="row">
-                <div class="col-12 col-md-4 col-lg-3 mb-5">
-                    <h3 class="section_sub_title">National Work</h3>
-                </div>
-                <div class="col-12 col-md-8 col-lg-6 mb-5">
-                    <h1 class="section_title mb-4">Refreshed Positive Pathway Frameworks</h1>
-                    <img src="./assets/images/national-frameworks.jpg" alt="Frameworks" class="img-fluid mb-4">
-                    <p class="mb-4">We have now refreshed the national Positive Pathway frameworks, advising on
-                        preventing youth homelessness, the youth justice accommodation pathway and on assisting care
-                        leavers.</p>
-                    <a class="btn_primary border mb-4" href="#">Positive Pathway</a>
-                    <h4 class="mb-3">Find out more about our other National Work:</h4>
-                    <a class="btn_primary border mb-4" href="#">Youth homelessness nationally</a>
-                    <a class="btn_primary border mb-4" href="#">St Basils Charter</a>
-                    <a class="btn_primary border mb-4" href="#">Youth Voice</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- national work  -->
 
     <!-- block section -->
     <section class="block_section py-5">
@@ -239,7 +223,7 @@
                         <div class="block_image block_3"></div>
                         <div class="card-body p-md-4 text-center">
                             <h3 class="block_title">You Can Employability Service</h3>
-                            <p class="block_discription">St Basils have a team of Employability Coaches that provide a 5
+                            <p class="block_discription">Smartmove have a team of Employability Coaches that provide a 5
                                 week Programme to young people within our accommodation and support services. This 5
                                 week course called #YouCan is to facilitate intensive support to help young people kick
                                 start the journey back to employment. With a focus of how to get there, through
@@ -266,8 +250,8 @@
                 <div class="col-12 col-lg-6 p-0 p-5 text-white content">
                     <div class="p-0 p-lg-4">
                         <h5>Success Stories</h5>
-                        <h1 class="section_title">“St Basils <br> gave me <br> hope”</h1>
-                        <p>“I didn’t become a statistic… I thank St Basils for the opportunities, which I doubt would
+                        <h1 class="section_title">“Smartmove <br> gave me <br> hope”</h1>
+                        <p>“I didn’t become a statistic… I thank Smartmove for the opportunities, which I doubt would
                             ever have come if I hadn’t discovered they existed.”</p>
                         <p>-One ex-resident shares her story.</p>
                         <a class="btn_outline_primary" href="#">Learn More</a>
@@ -298,47 +282,6 @@
         </div>
     </section>
     <!-- yellow background -->
-
-    <!-- section latest -->
-    <section class="bg-white pt-5 section_latest">
-        <div class="container-lg">
-            <div class="row">
-                <div class="col-12 col-md-4 col-lg-3 mb-5">
-                    <h2 class="section_sub_title">Latest</h2>
-                    <a class="read_more" href="#">Read more news +</a>
-                </div>
-                <div class="col-12 col-md-8 col-lg-6 mb-5">
-                    <h1 class="section_title"><a class="text-dark text-decoration-none" href="#">"I bonded with a
-                            homeless young man through a strawberry milkshake – it takes time to build trust"</a></h1>
-                    <p class="date">13th Dec, 2022</p>
-                    <a href="#">
-                        <img src="./assets/images/latestOutreach.png" class='img-fluid mb-4' alt="Outreach">
-                    </a>
-                    <p>Vanessa Newey has helped develop an outreach service in Birmingham through St Basils to support
-                        young people sleeping rough. She tells us young people on the streets have been through a lot of
-                        trauma and it takes time to build trust. </p>
-                    <a class="read_more" href="#">Read More +</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-4 col-lg-3 mb-5">
-                    <h2 class="section_sub_title">Latest</h2>
-                    <a class="read_more mb-4" href="#">Read more events +</a>
-                    <a class="read_more" href="#">Read more basil bytes +</a>
-                </div>
-                <div class="col-12 col-md-8 col-lg-6 mb-5">
-                    <h1 class="section_title"><a class="text-dark text-decoration-none" href="#">"Youth Advisory Board
-                            Help Develop Action Plan for Cost of Living Crisis"</a></h1>
-                    <p class="date">19th Dec, 2022</p>
-                    <a href="#">
-                        <img src="./assets/images/latestCover.png" class='img-fluid mb-4' alt="Cover">
-                    </a>
-                    <a class="read_more" href="#">Read More +</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- section latest -->
 
     <!-- bg-blue block section -->
     <section class="bg_blue_block_section pt-5">
@@ -373,7 +316,7 @@
                         <div class="card-body p-md-4 text-center">
                             <h3 class="block_title">PIE Training (for Organisations)</h3>
                             <p class="block_discription">Drawing upon ten years of being a Psychologically Informed
-                                Environment (PIE), St Basils PIE team are using their expertise to support other
+                                Environment (PIE), Smartmove PIE team are using their expertise to support other
                                 organisations to become more ‘psychologically-informed’.</p>
                             <a class="btn_primary" href="#">Read More</a>
                         </div>

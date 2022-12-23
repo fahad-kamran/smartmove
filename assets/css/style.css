@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 * {
     margin: 0px;
     padding: 0px;
@@ -5,32 +6,37 @@
 }
 
 body {
-    font-family: Usual, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 :root {
-    --primary-color: red;
-    --primary-hover-color: #d90000;
+    --primary-color: rgb(255, 0, 0);
+    --primary-hover-color: rgb(217, 0, 0);
 }
-.bg-none{
+
+.bg-none {
     background: none;
 }
+
 .text-primary {
     color: var(--primary-color) !important;
 }
-.bg-primary{
+
+.bg-primary {
     background-color: var(--primary-color) !important;
 }
+
 .text-dark {
-    color: #0a0a0a !important;
+    color: rgb(10, 10, 10) !important;
 }
 
 .section_title {
     font-size: 42px;
     font-weight: 700;
 }
+
 @media screen and (max-width: 768px) {
-    .section_title{
+    .section_title {
         font-size: 36px;
     }
 }
@@ -48,7 +54,7 @@ body {
 
 .btn_primary {
     background-color: var(--primary-color);
-    color: #fefefe;
+    color: rgb(254, 254, 254);
     display: inline-block;
     text-decoration: none;
     font-weight: 700;
@@ -59,14 +65,14 @@ body {
 }
 
 .btn_primary:hover {
-    color: #fff;
+    color: rgb(255, 255, 255);
     background-color: var(--primary-hover-color);
 }
 
 .btn_outline_primary {
     background-color: none;
-    color: #fefefe;
-    border: 2px solid #fefefe;
+    color: rgb(254, 254, 254);
+    border: 2px solid rgb(254, 254, 254);
     display: inline-block;
     text-decoration: none;
     font-weight: 700;
@@ -77,68 +83,89 @@ body {
 }
 
 .btn_outline_primary:hover {
-    color: #111;
-    background-color: #fefefe;
+    color: rgb(17, 17, 17);
+    background-color: rgb(254, 254, 254);
 }
+
 /* NavBar */
-.navBar{
-    background-color: #ff0032;
+.navBar {
+    background-color: rgb(255, 0, 50);
     position: sticky;
     z-index: 999;
     top: 0;
+    padding: 1,5rem 0px;
 }
-.navbar_logo{
-    max-width: 120px;
+
+.navbar_logo {
+    max-width: 200px;
     height: auto;
 }
-.fs-30{
+
+.fs-30 {
     font-size: 30px;
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
-.custom_dropdown > .dropdown_menu{
+
+.custom_dropdown>.dropdown_menu {
     display: none;
 }
-.custom_dropdown:hover .dropdown_menu{
+
+.custom_dropdown:hover .dropdown_menu {
     display: block;
     top: 100%;
     left: 0;
 }
-.custom_dropdown .dropdown_menu{
-    background-color: #ff0032;
-    border: 2px solid #fff;
+
+.custom_dropdown .dropdown_menu {
+    background-color: rgb(255, 0, 50);
+    border: 2px solid rgb(255, 255, 255);
     list-style: none;
     padding: 15px;
     min-width: 200px;
 }
-.dropdown_menu .dropdown_item{
-    color: #fff;
+
+.dropdown_menu .dropdown_item {
+    color: rgb(255, 255, 255);
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
     transition: .3s all ease-in-out;
 }
-.dropdown_menu .dropdown_item:hover{
-    border-bottom: 1px solid #fff;
+
+.dropdown_menu .dropdown_item:hover {
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 /* side bar menu */
-.sidebar_menu{
+.sidebar_menu {
     list-style: none;
     padding-left: 0px;
 }
+
 /* side bar menu */
 /* NavBar */
 /* home banner */
-.home_banner{
-background-color: #ff0032;
+.home_banner {
+    background-color: rgb(255, 0, 50);
 }
+
 /* home banner */
 /* our-mission */
 .our_mission {
     background-image: url('../images/our-mission-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+}
+
+.our_mission::after {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    content: '';
+    inset: 0;
+    z-index: -1;
 }
 
 .our_mission .discription {
@@ -150,7 +177,7 @@ background-color: #ff0032;
 .yellow_bg_section .social_links {
     text-transform: uppercase;
     display: block;
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
@@ -159,23 +186,18 @@ background-color: #ff0032;
 /* our-mission */
 /* about section */
 .about_section {
-    background-color: #350f66;
+    background-color: rgb(53, 15, 102);
 }
 
 /* about section */
-/* national work */
-.national_work {
-    background-color: #ff00ea;
-}
 
-/* national work */
 /* block section */
 .block_section {
-    background-color: #350f66;
+    background-color: rgb(53, 15, 102);
 }
 
 .bg_blue_block_section {
-    background-color: #1059f4;
+    background-color: rgb(16, 89, 244);
 }
 
 .block_card {
@@ -185,7 +207,7 @@ background-color: #ff0032;
 .block_title {
     font-size: 16px;
     line-height: 1.6;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .block_discription {
@@ -239,37 +261,24 @@ background-color: #ff0032;
 }
 
 .success_stories .content {
-    background-color: #1059f4;
+    background-color: rgb(16, 89, 244);
 }
 
 /* success stories */
 /* yellow background */
 .yellow_bg_section {
-    background-color: #feae01;
+    background-color: rgb(254, 174, 1);
 }
 
 /* yellow background */
-/* latest */
-.section_latest .read_more {
-    font-weight: 700;
-    text-decoration: none;
-    color: #000;
-    display: inline-block;
-}
 
-.section_latest .date {
-    font-size: 14px;
-    font-weight: 600;
-}
-
-/* latest */
 /* footer */
 .footer {
-    background-color: #111;
+    background-color: rgb(17, 17, 17);
 }
 
 .footer .detailed {
-    color: #646464;
+    color: rgb(100, 100, 100);
     font-size: 14px;
 }
 
