@@ -93,7 +93,7 @@ body {
     position: sticky;
     z-index: 999;
     top: 0;
-    padding: 1,5rem 0px;
+    padding: 1.5rem 0px;
 }
 
 .navbar_logo {
@@ -147,6 +147,8 @@ body {
 /* home banner */
 .home_banner {
     background-color: rgb(255, 0, 50);
+    min-height: 90vh;
+    align-items: center;
 }
 
 /* home banner */
